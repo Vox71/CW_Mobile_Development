@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">control_lesson1</string>
+    <string name="bingus">BINGUS</string>
+    <string name="classhehe">класс:)</string>
+    <string name="bingustext">На изображении предоставлен очень смешной кот. Не обусждается.</string>
+    <string name="likes" id="likes">77</string>
 </resources>

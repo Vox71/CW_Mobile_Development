@@ -6,34 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="114dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="336dp"
-        android:text="Hello World!"
+    <CheckBox
+        android:id="@+id/checkBox_bingus"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="320dp"
+        android:text="@string/bingus"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_class"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="252dp"
-        tools:layout_editor_absoluteY="682dp" />
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="324dp"
+        android:text="@string/classhehe"
+        android:onClick="onButtonClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_bingus" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="355dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="336dp"
+        android:text="@string/bingustext"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.642"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.43"
+        tools:ignore="TextSizeCheck" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="411dp"
         android:layout_height="302dp"
-        android:layout_marginBottom="420dp"
+        android:layout_marginBottom="424dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        tools:srcCompat="@drawable/da8d4607c370e841d63b7ace62a4222e"
+        tools:ignore="ContentDescription,VisualLintBounds" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="82dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="324dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_class"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
