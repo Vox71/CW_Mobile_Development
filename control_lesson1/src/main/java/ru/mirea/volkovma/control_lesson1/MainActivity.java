@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
 
         btn = (Button) findViewById(R.id.button_class);
         txv = (TextView) findViewById(R.id.editTextNumber);
+
+        ImageView img= (ImageView) findViewById(R.id.imageView);
+        img.setImageResource(R.drawable.da8d4607c370e841d63b7ace62a4222e);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
